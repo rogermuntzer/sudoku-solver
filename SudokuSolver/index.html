@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="en-GB" dir="ltr">
+    <head>
+        <link rel="stylesheet" href="/SudokuRules.css"> <!--Make sure to put all CSS links in the head at the top-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"> <!--This scales for all browsers-->
+        <title>Sudoku Solver</title> <!--Title in the tab-->
+    </head>
+    <body>
+        <h1>Sudoku Solver</h1>
+        <div class="content-wrapper">
+            <form id="form">
+                <input type="number" min="1" max="9" id="0" name="00"><br>
+                <input type="number" min="1" max="9" id="1" name="01"><br>
+                <input type="number" min="1" max="9" id="2" name="02"><br>
+                <div class="gap"> </div>
+                <input type="number" min="1" max="9" id="3" name="03"><br>
+                <input type="number" min="1" max="9" id="4" name="04"><br>
+                <input type="number" min="1" max="9" id="5" name="05"><br>
+                <div class="gap"> </div>
+                <input type="number" min="1" max="9" id="6" name="06"><br>
+                <input type="number" min="1" max="9" id="7" name="07"><br>
+                <input type="number" min="1" max="9" id="8" name="08"><br>
+
+                <input type="number" min="1" max="9" id="9" name="10"><br>
+                <input type="number" min="1" max="9" id="10" name="11"><br>
+                <input type="number" min="1" max="9" id="11" name="12"><br>
+                <div class="gap"> </div>
+                <input type="number" min="1" max="9" id="12" name="13"><br>
+                <input type="number" min="1" max="9" id="13" name="14"><br>
+                <input type="number" min="1" max="9" id="14" name="15"><br>
+                <div class="gap"> </div>
+                <input type="number" min="1" max="9" id="15" name="16"><br>
+                <input type="number" min="1" max="9" id="16" name="17"><br>
+                <input type="number" min="1" max="9" id="17" name="18"><br>
+
+                <input type="number" min="1" max="9" id="18" name="20"><br>
+                <input type="number" min="1" max="9" id="19" name="21"><br>
+                <input type="number" min="1" max="9" id="20" name="22"><br>
+                <div class="gap"> </div>
+                <input type="number" min="1" max="9" id="21" name="23"><br>
+                <input type="number" min="1" max="9" id="22" name="24"><br>
+                <input type="number" min="1" max="9" id="23" name="25"><br>
+                <div class="gap"> </div>
+                <input type="number" min="1" max="9" id="24" name="26"><br>
+                <input type="number" min="1" max="9" id="25" name="27"><br>
+                <input type="number" min="1" max="9" id="26" name="28"><br>
+                <div class="full-gap"> </div>
+
+                <input type="number" min="1" max="9" id="27" name="30"><br>
+                <input type="number" min="1" max="9" id="28" name="31"><br>
+                <input type="number" min="1" max="9" id="29" name="32"><br>
+                <div class="gap"> </div>
+                <input type="number" min="1" max="9" id="30" name="33"><br>
+                <input type="number" min="1" max="9" id="31" name="34"><br>
+                <input type="number" min="1" max="9" id="32" name="35"><br>
+                <div class="gap"> </div>
+                <input type="number" min="1" max="9" id="33" name="36"><br>
+                <input type="number" min="1" max="9" id="34" name="37"><br>
+                <input type="number" min="1" max="9" id="35" name="38"><br>
+                
+                <input type="number" min="1" max="9" id="36" name="40"><br>
+                <input type="number" min="1" max="9" id="37" name="41"><br>
+                <input type="number" min="1" max="9" id="38" name="42"><br>
+                <div class="gap"> </div>
+                <input type="number" min="1" max="9" id="39" name="43"><br>
+                <input type="number" min="1" max="9" id="40" name="44"><br>
+                <input type="number" min="1" max="9" id="41" name="45"><br>
+                <div class="gap"> </div>
+                <input type="number" min="1" max="9" id="42" name="46"><br>
+                <input type="number" min="1" max="9" id="43" name="47"><br>
+                <input type="number" min="1" max="9" id="44" name="48"><br>
+
+                <input type="number" min="1" max="9" id="45" name="50"><br>
+                <input type="number" min="1" max="9" id="46" name="51"><br>
+                <input type="number" min="1" max="9" id="47" name="52"><br>
+                <div class="gap"> </div>
+                <input type="number" min="1" max="9" id="48" name="53"><br>
+                <input type="number" min="1" max="9" id="49" name="54"><br>
+                <input type="number" min="1" max="9" id="50" name="55"><br>
+                <div class="gap"> </div>
+                <input type="number" min="1" max="9" id="51" name="56"><br>
+                <input type="number" min="1" max="9" id="52" name="57"><br>
+                <input type="number" min="1" max="9" id="53" name="58"><br>
+                <div class="full-gap"> </div>
+
+                <input type="number" min="1" max="9" id="54" name="60"><br>
+                <input type="number" min="1" max="9" id="55" name="61"><br>
+                <input type="number" min="1" max="9" id="56" name="62"><br>
+                <div class="gap"> </div>
+                <input type="number" min="1" max="9" id="57" name="63"><br>
+                <input type="number" min="1" max="9" id="58" name="64"><br>
+                <input type="number" min="1" max="9" id="59" name="65"><br>
+                <div class="gap"> </div>
+                <input type="number" min="1" max="9" id="60" name="66"><br>
+                <input type="number" min="1" max="9" id="61" name="67"><br>
+                <input type="number" min="1" max="9" id="62" name="68"><br>
+
+                <input type="number" min="1" max="9" id="63" name="70"><br>
+                <input type="number" min="1" max="9" id="64" name="71"><br>
+                <input type="number" min="1" max="9" id="65" name="72"><br>
+                <div class="gap"> </div>
+                <input type="number" min="1" max="9" id="66" name="73"><br>
+                <input type="number" min="1" max="9" id="67" name="74"><br>
+                <input type="number" min="1" max="9" id="68" name="75"><br>
+                <div class="gap"> </div>
+                <input type="number" min="1" max="9" id="69" name="76"><br>
+                <input type="number" min="1" max="9" id="70" name="77"><br>
+                <input type="number" min="1" max="9" id="71" name="78"><br>
+
+                <input type="number" min="1" max="9" id="72" name="80"><br>
+                <input type="number" min="1" max="9" id="73" name="81"><br>
+                <input type="number" min="1" max="9" id="74" name="82"><br>
+                <div class="gap"> </div>
+                <input type="number" min="1" max="9" id="75" name="83"><br>
+                <input type="number" min="1" max="9" id="76" name="84"><br>
+                <input type="number" min="1" max="9" id="77" name="85"><br>
+                <div class="gap"> </div>
+                <input type="number" min="1" max="9" id="78" name="86"><br>
+                <input type="number" min="1" max="9" id="79" name="87"><br>
+                <input type="number" min="1" max="9" id="80" name="88"><br>
+                <input type="reset" value="Reset">
+                <input type="button" onclick="sudokuSolverFunction()" value="Solve">
+            </form>
+        </div>
+        <script src="/SudokuSolverOnline.js"></script>  <!--Put the JavaScript links at the bottom-->
+    </body>
+</html>

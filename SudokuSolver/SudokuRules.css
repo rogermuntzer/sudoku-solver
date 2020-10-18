@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&display=swap'); /*Brings in the font*/
+body {
+    background-color: white;
+    justify-content: center;
+}
+.content-wrapper {
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    align-content: center;
+    max-width: 500px;
+}
+h1 {
+    font-display: block;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Didact Gothic', sans-serif;
+    color: crimson;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    list-style: none;
+    border: 3px solid khaki;
+    -ms-box-orient: horizontal;
+  }
+  input[type=number] {
+    text-align: center;
+    width: 8%;
+    margin: 2px 2px 4px 1px;
+    background-color: khaki;
+    position: relative;
+    padding: 2% 0 2% 0;
+    border-color: white;
+    -moz-appearance:textfield; /* Firefox */
+}
+input[type=button],[type=reset] {
+    text-transform: uppercase;
+    font-display: block;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Didact Gothic', sans-serif;
+    color: crimson;
+    text-align: center;
+    width: 48%;
+    margin: 10px 2px 1px 1px;
+    background-color: khaki;
+    position: relative;
+    padding: 2% 0 2% 0;
+    border-color: crimson;
+}
+.gap {
+    text-align: center;
+    width: 3%;
+    margin: 1px 0 1px 0;
+    position: relative;
+    padding: 2% 0 2% 0;
+}
+.full-gap {
+    text-align: center;
+    width: 100%;
+    margin: 4px 0 1px 0;
+    position: relative;
+    padding: 1.5% 0 1.5% 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
